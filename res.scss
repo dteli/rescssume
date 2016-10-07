@@ -1,0 +1,207 @@
+
+// 16.59cm
+// 2.9, 0.4, 13.29cm;  (2.5) 2.9, 3.3
+//
+// (2.5) 2.9, 3.3, 11.4, 11.8;
+
+
+@page {
+  size: 8.5in 11in;
+  margin: 2cm 2.5cm 2cm;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-family: "Swift", "Merriweather", serif;
+  font-size: 11pt;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+//   direction: rtl;
+  margin: 0;
+  padding: 0;
+}
+//
+// body * {
+//   direction: ltr;
+// }
+
+
+a {
+  color: #3d10c7;
+  text-decoration: none;
+}
+
+
+h1 {
+  display: block;
+  width: 13.29cm;
+  margin: 0 0 6pt 3.3cm;
+
+  font-size: 22pt;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  width: 13.29cm;
+  margin: 12pt 0 6pt 3.3cm;
+
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+h3 {
+  display: inline-block;
+  //width: 13.29cm;
+  flex-grow: 1;
+  //margin: auto 0 auto 0.4cm;
+  margin: auto 0 auto 3.3cm;
+
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+
+
+
+p {
+  //display: inline-block;
+  //width: 13.29cm;
+  margin: auto 0 4pt 3.3cm; //0.4cm;
+
+  flex-basis: 13.29cm;
+  flex-grow: 1;
+
+  display: inline-block;
+
+  .pctxt {
+    text-indent: 0.8cm;
+    display: block;
+  }
+}
+
+
+section > div {
+  //display: block;
+  margin: auto 0;
+  //padding: 0;
+
+  display: flex;
+  flex-direction: row;
+//   flex-wrap: nowrap;
+  //justify-content: flex-end;
+  align-items: flex-start;
+
+}
+
+
+
+
+//.left {
+h5 {
+  display: inline-block;
+  //margin: auto 0.4cm auto none;
+  margin: 0;
+  width: 2.9cm;
+  height: 11pt;
+  line-height: 14pt;
+  flex-grow: 0;
+
+  text-align: right;
+  font-size: 8pt;
+  font-weight: bold;
+  color: #8f8f8f;
+
+  .sc {
+    font-variant: small-caps;
+  }
+
+  + h3 {
+      margin-left: 0.4cm;
+  }
+
+  + p {
+      margin-left: 0.4cm;
+  }
+}
+
+.ctxt {
+  font-size: 9pt;
+  font-style: italic;
+}
+
+
+header {
+  width: 16.59cm;
+  margin: 0 0 8pt;
+  display: flex;
+
+
+  p {
+    margin-bottom: 0;
+    min-width: 4.7cm;
+  }
+
+    + h2 {
+        margin-top: 0;
+    }
+
+}
+
+#col1 {
+  //width: 9.5cm;
+  flex-basis: 8.5cm;
+  flex-grow: 0;
+  display: inline-block;
+
+  p {
+
+  }
+}
+
+#col2 {
+  //width: 7.09cm;
+  flex-basis: 7.09cm;
+  flex-grow: 1;
+  display: inline-block;
+}
+
+
+section {
+  margin: auto 0;
+  //padding
+
+  //> body {}    // toplevel sections
+  > section {
+    margin: 0 0 8pt;
+  }    // subsections (entries)
+
+}
+
+
+
+
+#education { }
+
+#employment { }
+
+#skills{ }
+
+
+
+
+
+
+
+
+
+
+
+
+
