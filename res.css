@@ -56,9 +56,9 @@ section > div {
 h5 {
   display: inline-block;
   margin: 0;
-  width: 2.9cm;
+  flex-basis: 2.9cm;
   height: 11pt;
-  line-height: 14pt;
+  line-height: 13pt;
   flex-grow: 0;
   text-align: right;
   font-size: 8pt;
@@ -71,17 +71,26 @@ h5 {
   h5 + p {
     margin-left: 0.4cm; }
 
-.ctxt {
+.ctxt p {
   font-size: 9pt;
   font-style: italic; }
+.ctxt h5 {
+  line-height: 12pt; }
 
 header {
   width: 16.59cm;
   margin: 0 0 8pt;
   display: flex; }
+  header div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; }
   header p {
     margin-bottom: 0;
-    min-width: 4.7cm; }
+    flex-basis: 0;
+    flex-grow: 1; }
+  header h5 {
+    flex-basis: 2.9cm; }
   header + h2 {
     margin-top: 0; }
 
@@ -100,4 +109,15 @@ section {
   section > section {
     margin: 0 0 8pt; }
 
-/*# sourceMappingURL=res2.css.map */
+.latex sub {
+  font-size: 1em;
+  vertical-align: -0.5ex;
+  margin-left: -0.14em;
+  margin-right: -0.1em; }
+.latex sup {
+  font-size: 0.8em;
+  vertical-align: 0.18em;
+  margin-left: -0.35em;
+  margin-right: -0.1em; }
+
+/*# sourceMappingURL=res.css.map */

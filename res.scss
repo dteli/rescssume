@@ -108,9 +108,10 @@ h5 {
   display: inline-block;
   //margin: auto 0.4cm auto none;
   margin: 0;
-  width: 2.9cm;
+  //width: 2.9cm;
+  flex-basis: 2.9cm;
   height: 11pt;
-  line-height: 14pt;
+  line-height: 13pt;
   flex-grow: 0;
 
   text-align: right;
@@ -123,17 +124,22 @@ h5 {
   }
 
   + h3 {
-      margin-left: 0.4cm;
+    margin-left: 0.4cm;
   }
 
   + p {
-      margin-left: 0.4cm;
+    margin-left: 0.4cm;
   }
 }
 
 .ctxt {
-  font-size: 9pt;
-  font-style: italic;
+  p {
+    font-size: 9pt;
+    font-style: italic;
+  }
+  h5 {
+    line-height: 12pt;
+  }
 }
 
 
@@ -142,15 +148,29 @@ header {
   margin: 0 0 8pt;
   display: flex;
 
+  div {
+    display: flex;
+    flex-direction: row;
+    //flex-wrap: nowrap;
+    //justify-content: flex-end;
+    align-items: flex-start;
+  }
 
   p {
     margin-bottom: 0;
-    min-width: 4.7cm;
+    //min-width: 4.7cm;
+    flex-basis: 0;
+    flex-grow: 1;
   }
 
-    + h2 {
-        margin-top: 0;
-    }
+  h5 {
+    flex-basis: 2.9cm;
+    //flex-grow: 0;
+  }
+
+  + h2 {
+    margin-top: 0;
+  }
 
 }
 
@@ -198,8 +218,24 @@ section {
 
 
 
+//==== Extras =================================================
 
-
+// as worked out in http://tess.oconnor.cx/2007/08/tex-poshlet
+// with some tweaks
+.latex {
+  sub {  //.latexA {
+    font-size: 1em;
+    vertical-align: -0.5ex;
+    margin-left: -0.14em;  //-0.1667em;
+    margin-right: -0.1em;  //-0.125em;
+  }
+  sup {  //.latexE {
+    font-size: 0.8em;  //0.85em;
+    vertical-align: 0.18em;  //0.15em;
+    margin-left: -0.35em;  //-0.3em;
+    margin-right: -0.1em;  //-0.15em;
+  }
+}
 
 
 
