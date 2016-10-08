@@ -29,7 +29,8 @@ h2 {
   width: 13.29cm;
   margin: 12pt 0 6pt 3.3cm;
   font-size: 14pt;
-  font-weight: bold; }
+  font-weight: bold;
+  page-break-after: avoid; }
 
 h3 {
   display: inline-block;
@@ -51,7 +52,8 @@ section > div {
   margin: auto 0;
   display: flex;
   flex-direction: row;
-  align-items: flex-start; }
+  align-items: flex-start;
+  page-break-after: avoid; }
 
 h5 {
   display: inline-block;
@@ -91,7 +93,7 @@ header {
     flex-grow: 1; }
   header h5 {
     flex-basis: 2.9cm; }
-  header + h2 {
+  header + section h2 {
     margin-top: 0; }
 
 #col1 {
@@ -107,14 +109,17 @@ header {
 section {
   margin: auto 0; }
   section > section {
-    margin: 0 0 8pt; }
+    margin: 0 0 8pt;
+    page-break-after: auto; }
 
 .latex sub {
+  text-transform: uppercase;
   font-size: 1em;
   vertical-align: -0.5ex;
   margin-left: -0.14em;
   margin-right: -0.1em; }
 .latex sup {
+  text-transform: uppercase;
   font-size: 0.8em;
   vertical-align: 0.18em;
   margin-left: -0.35em;
