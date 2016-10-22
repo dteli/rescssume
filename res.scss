@@ -223,6 +223,7 @@ section {
 
 
 
+
 //==== Extras =================================================
 
 // as worked out in http://tess.oconnor.cx/2007/08/tex-poshlet
@@ -243,6 +244,108 @@ section {
     margin-right: -0.1em;  //-0.15em;
   }
 }
+
+
+
+
+
+//==============================================================================
+
+@media screen {
+
+  body {
+    //margin:
+    padding-top: 2rem;
+  }
+
+  h1 {
+    width: 80%;
+    margin: 0 0 0.6rem 20%;
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    width: 80%;
+    margin: 1.2rem 0 0.6rem 20%;
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    margin: auto 0 auto 20%;
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin: auto 0 0.4rem 20%;
+    flex-basis: 80%;
+    //flex-grow: 1;
+
+    .pctxt {
+      text-indent: 2rem;
+    }
+  }
+
+  section > div {}
+
+  h5 {
+    flex-basis: calc(20% - 1rem);
+    height: 1.1rem;
+    line-height: 1.3rem;
+    font-size: 0.8rem;
+
+    + h3 { margin-left: 1rem; }
+
+    + p { margin-left: 1rem; }
+  }
+
+  .ctxt {
+    p {
+      font-size: 0.9rem;
+    }
+    h5 {
+      line-height: 1.2rem;
+    }
+  }
+
+  header {
+    width: 100%;
+    margin: 0 0 0.8rem;
+    h5 {
+      flex-basis: calc(40% - 1rem);
+    }
+  }
+
+  #col1 {
+    flex-basis: 50%;
+  }
+
+  #col2 {
+    flex-basis: 43%;
+    h5 {
+      flex-basis: 20%;
+    }
+  }
+
+  section > section {
+    margin: 0 0 0.8rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
