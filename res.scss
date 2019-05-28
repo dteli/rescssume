@@ -87,7 +87,21 @@ p {
     text-indent: 0.8cm;
     display: block;
   }
+
 }
+
+ul {
+  margin: auto 0 0.4rem 20%;
+
+  list-style-type: square;
+
+  li {
+    font-style: italic;
+    font-size: 10pt;
+  }
+  
+}
+
 
 
 section > div {
